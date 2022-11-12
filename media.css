@@ -1,0 +1,68 @@
+@media (max-width: 79em) {
+  .hero--text {
+    font-size: 2.4rem;
+    margin-bottom: 0.6rem;
+  }
+  .hero--intro {
+    font-size: 2rem;
+  }
+  .project-link:link,
+  .project-link:visited {
+    padding: 0.7rem 1.1rem;
+    font-size: 0.9rem;
+  }
+  .sub--header {
+    font-size: 1.6rem;
+  }
+  .project--grid {
+    width: 100%;
+    margin: 0;
+  }
+}
+
+@media (max-width: 75em) {
+  .project--grid {
+    grid-template-columns: 1fr;
+  }
+  .hidden {
+    display: block;
+  }
+}
+
+@media (max-width: 40em) {
+  .hero--section {
+    grid-template-columns: 1fr;
+  }
+  .hero--img {
+    width: 50%;
+    justify-self: center;
+    grid-row: 1 / -1;
+    background-color: #fff;
+    border-radius: 5px;
+    border: solid 1px rgba(0, 0, 0, 0.7);
+  }
+  .container--section {
+    min-height: 100rem;
+  }
+  .link {
+    display: inline-block;
+  }
+  .project--link {
+    display: flex;
+    flex-direction: column;
+    gap: 1.2rem;
+    align-items: center;
+  }
+}
+
+@media (max-width: 30em) {
+  .project--link {
+    align-items: flex-start;
+  }
+}
+
+@media (max-width: 27em) {
+  .contact {
+    flex-direction: column;
+  }
+}
