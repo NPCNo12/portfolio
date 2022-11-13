@@ -33,6 +33,11 @@
   .hero--section {
     grid-template-columns: 1fr;
   }
+  .setting-img {
+    display: block;
+    grid-column: 1 / -1;
+    z-index: 2;
+  }
   .hero--img {
     width: 50%;
     justify-self: center;
@@ -41,8 +46,37 @@
     border-radius: 5px;
     border: solid 1px rgba(0, 0, 0, 0.7);
   }
+  .navbar {
+    position: absolute;
+    height: 50vh;
+    width: 100%;
+    top: 0;
+    left: 0;
+    flex-direction: column;
+    justify-content: space-evenly;
+    background-color: rgba(0, 0, 0, 0.98);
+    z-index: 1;
+    transform: translateY(-100%);
+    transition: all 0.5s;
+
+    /* hide element */
+    opacity: 0;
+    pointer-events: none;
+    visibility: hidden;
+  }
+  .navbar-open .navbar {
+    opacity: 1;
+    pointer-events: auto;
+    visibility: visible;
+    transform: translateY(0);
+  }
+
   .container--section {
     min-height: 100rem;
+  }
+  .icon--container {
+    grid-template-columns: repeat(2, 1fr);
+    row-gap: 1.6rem;
   }
   .link {
     display: inline-block;
